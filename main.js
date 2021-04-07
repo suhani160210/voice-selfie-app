@@ -36,12 +36,12 @@ Webcam.set({
 });
 function take_snapshot(){
 Webcam.snap(function(data_uri){
-    document.getElementById("result").innerHTML='<img id="selfie"src="'+data_uri+'">';
+    document.getElementById("result").innerHTML='<img id="picture"src="'+data_uri+'">';
 });
 }
 function save(){
     link=document.getElementById("link");
-    image=document.getElementById("selfie").src;
+    image=document.getElementById("picture").src;
     link.href=image;
-    link.click();
+    link.Click();
 }
